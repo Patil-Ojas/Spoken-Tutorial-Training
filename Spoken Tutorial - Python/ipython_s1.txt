@@ -1,0 +1,62 @@
+
+C:\Users\ojasa>ipython3
+Python 3.9.7 (tags/v3.9.7:1016ef3, Aug 30 2021, 20:19:38) [MSC v.1929 64 bit (AMD64)]
+Type 'copyright', 'credits' or 'license' for more information
+IPython 8.0.1 -- An enhanced Interactive Python. Type '?' for help.
+
+In [1]: print?
+Docstring:
+print(value, ..., sep=' ', end='\n', file=sys.stdout, flush=False)
+
+Prints the values to a stream, or to sys.stdout by default.
+Optional keyword arguments:
+file:  a file-like object (stream); defaults to the current sys.stdout.
+sep:   string inserted between values, default a space.
+end:   string appended after the last value, default a newline.
+flush: whether to forcibly flush the stream.
+Type:      builtin_function_or_method
+
+In [2]: abs(-10.5)
+Out[2]: 10.5
+
+In [3]: round?
+Signature: round(number, ndigits=None)
+Docstring:
+Round a number to a given precision in decimal digits.
+
+The return value is an integer if ndigits is omitted or None.  Otherwise
+the return value has the same type as the number.  ndigits may be negative.
+Type:      builtin_function_or_method
+
+In [4]: round(50.2345, ndigits=3)
+Out[4]: 50.234
+
+In [5]: round(50.2345, ndigits=2)
+Out[5]: 50.23
+
+In [6]: round(50.2945, ndigits=2)
+Out[6]: 50.29
+
+In [7]: round(2.48))
+  Input In [7]
+    round(2.48))
+               ^
+SyntaxError: unmatched ')'
+
+
+In [8]: round(2.48)
+Out[8]: 2
+
+In [9]: round(2.48, 1)
+Out[9]: 2.5
+
+In [10]: round(2.484)
+Out[10]: 2
+
+In [11]: round(2.484, 2)
+Out[11]: 2.48
+
+In [12]: round(2.488, 2)
+Out[12]: 2.49
+
+In [13]:

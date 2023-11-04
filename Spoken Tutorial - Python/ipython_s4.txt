@@ -1,0 +1,15 @@
+
+In [36]: x = linspace(-3 * pi, 3 * pi, 100)
+
+In [37]: plot(x, cos(x))
+Out[37]: [<matplotlib.lines.Line2D at 0x2002c0dd850>]
+
+In [38]: savefig("sinegraph.png")
+
+In [39]: pwd
+Out[39]: 'C:\\Users\\ojasa'
+
+In [41]: plot(x, sin(x))
+Out[41]: [<matplotlib.lines.Line2D at 0x2002c0e72b0>]
+
+In [42]: savefig("sinegraphe.eps")

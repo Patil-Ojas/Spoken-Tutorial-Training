@@ -1,0 +1,75 @@
+
+C:\Users\ojasa>ipython3
+Python 3.9.7 (tags/v3.9.7:1016ef3, Aug 30 2021, 20:19:38) [MSC v.1929 64 bit (AMD64)]
+Type 'copyright', 'credits' or 'license' for more information
+IPython 8.0.1 -- An enhanced Interactive Python. Type '?' for help.
+
+In [1]: %pylab
+Using matplotlib backend: TkAgg
+%pylab is deprecated, use %matplotlib inline and import the required libraries.
+Populating the interactive namespace from numpy and matplotlib
+
+In [2]: x = linspace(-2, 4, 20)
+
+In [4]: plot(x, sin(x))
+Out[4]: [<matplotlib.lines.Line2D at 0x20026965610>]
+
+In [4]: plot(x, sin(x))
+Out[4]: [<matplotlib.lines.Line2D at 0x20026965610>]
+
+In [5]: clf()
+
+In [6]: plot(x, sin(x), "r")
+Out[6]: [<matplotlib.lines.Line2D at 0x200269230a0>]
+
+In [7]: plot(x, cos(x), linewidth=2)
+Out[7]: [<matplotlib.lines.Line2D at 0x2000e9bab50>]
+
+In [8]: clf()
+
+In [9]: plot(x, sin(x), ".")
+Out[9]: [<matplotlib.lines.Line2D at 0x200269829d0>]
+
+Q) PLot a curve of x vs cosx in red dashed line and linewidth 3
+In [12]: plot(x, cos(x), "r", linestyle="dashed", linewidth=2)
+Out[12]: [<matplotlib.lines.Line2D at 0x20027800280>]
+
+In [15]: plot(x, -x*x + 4 * x - 5, "r", linewidth=2)
+Out[15]: [<matplotlib.lines.Line2D at 0x20027729130>]
+
+In [17]: title("Parabolic fn -x^2+4*x-5")
+Out[17]: Text(0.5, 1.0, 'Parabolic fn -x^2+4*x-5')
+
+In [18]: title(r"Parabolic fn $-x^2+4*x-5$")
+Out[18]: Text(0.5, 1.0, 'Parabolic fn $-x^2+4*x-5$')
+
+In [19]: xlabel(r"$x$")
+Out[19]: Text(0.5, 28.902777777777764, '$x$')
+
+In [20]: ylabel("$y$")
+Out[20]: Text(44.277777777777786, 0.5, '$y$')
+
+In [22]: annotate("local maxima", xy=(2, -1))
+Out[22]: Text(2, -1, 'local maxima')
+
+In [23]: xlim()
+Out[23]: (-2.3, 4.3)
+
+In [24]: ylim()
+Out[24]: (-17.799445983379503, -0.21163434903047074)
+
+In [25]: xlim(-4, 5)
+Out[25]: (-4.0, 5.0)
+
+In [26]: ylim(-15, 2)
+Out[26]: (-15.0, 2.0)
+
+In [27]: annotate("root", xy=(-4, 0))
+Out[27]: Text(-4, 0, 'root')
+
+assignment
+In [28]: x = linspace(-2 * pi, 2 * pi, 100)
+
+In [29]: plot(x, cos(x), linewidth=3)
+Out[29]: [<matplotlib.lines.Line2D at 0x20026d5d250>]
+

@@ -1,0 +1,72 @@
+
+In [1]: %pylab
+Using matplotlib backend: TkAgg
+%pylab is deprecated, use %matplotlib inline and import the required libraries.
+Populating the interactive namespace from numpy and matplotlib
+
+In [2]: x = linspace(0, 50, 10)
+
+In [3]: y = linspace(1, 50, 500)
+
+In [4]: plot(x, sin(x))
+Out[4]: [<matplotlib.lines.Line2D at 0x1a08db60dc0>]
+
+In [5]: plot(y, sin(y))
+Out[5]: [<matplotlib.lines.Line2D at 0x1a0ffd02340>]
+
+In [6]: legend(["sin(x)", "sin(y)"])
+Out[6]: <matplotlib.legend.Legend at 0x1a08db7c790>
+
+Plot y=4*x^2 and y = 2x+3 in interval -5 to 5
+In [8]: x = linspace(-5, 5, 100)
+
+In [9]: plot(x, 4 * x * x)
+Out[9]: [<matplotlib.lines.Line2D at 0x1a08b129190>]
+
+In [10]: plot(x, 2 * x + 3)
+Out[10]: [<matplotlib.lines.Line2D at 0x1a0ffd62f40>]
+
+In [12]: legend([r"$y = 4*x^2$", r"$y = 2*x+3$"])
+Out[12]: <matplotlib.legend.Legend at 0x1a08db7c520>
+
+In [14]: x = linspace(0, 50, 500)
+
+In [15]: figure(1)
+Out[15]: <Figure size 800x600 with 0 Axes>
+
+In [16]: plot(x, sin(x), "b")
+Out[16]: [<matplotlib.lines.Line2D at 0x1a08ddcbc70>]
+
+In [17]: figure(2)
+Out[17]: <Figure size 640x480 with 0 Axes>
+
+In [18]: plot(x, cos(x), "g")
+Out[18]: [<matplotlib.lines.Line2D at 0x1a08de3aee0>]
+
+In [19]: title("cos(x)")
+Out[19]: Text(0.5, 1.0, 'cos(x)')
+
+In [20]: savefig("cosine_s5.png")
+
+In [21]: figure(1)
+Out[21]: <Figure size 800x600 with 1 Axes>
+
+In [22]: title("sin(x)")
+Out[22]: Text(0.5, 1.0, 'sin(x)')
+
+In [23]: savefig("sine_s5.png")
+
+Draw a line of the form y=x as one figure and another line of the form y = 2x+3
+In [30]: x = linspace(0, 50, 100)
+
+In [31]: figure(1)
+Out[31]: <Figure size 640x480 with 0 Axes>
+
+In [32]: plot(x, x)
+Out[32]: [<matplotlib.lines.Line2D at 0x1a0ffdbe0a0>]
+
+In [33]: figure(2)
+Out[33]: <Figure size 640x480 with 0 Axes>
+
+In [34]: plot(x, 2 * x + 3)
+Out[34]: [<matplotlib.lines.Line2D at 0x1a08de0f490>]

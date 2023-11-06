@@ -1,0 +1,54 @@
+
+In [7]: x = linspace(0, 50, 500)
+
+In [8]: plot(x, cos(x))
+Out[8]: [<matplotlib.lines.Line2D at 0x15c23d04580>]
+
+In [9]: y = linspace(0, 5, 100)
+
+In [10]: plot(y, y ** 2)
+Out[10]: [<matplotlib.lines.Line2D at 0x15c23f48d30>]
+this meh so we use subplots
+
+In [11]: clf()
+
+In [12]: subplot(2, 1, 1)
+Out[12]: <AxesSubplot:>
+
+In [13]: subplot(2, 1, 2)
+Out[13]: <AxesSubplot:>
+
+In [14]: subplot(2, 1, 1)
+Out[14]: <AxesSubplot:>
+
+In [15]: plot(x, cos(x))
+Out[15]: [<matplotlib.lines.Line2D at 0x15c240f6850>]
+
+In [16]: subplot(2, 1, 2)
+Out[16]: <AxesSubplot:>
+
+In [17]: plot(y, y ** 2)
+Out[17]: [<matplotlib.lines.Line2D at 0x15c23bacd90>]
+
+W ques)
+Pressure, vol and temp are held by PV = nRT where nR is constant.
+Assume nR = 0.01 J/K and T = 200K. Vol can be in range 21 to 100.
+Draw two different plots as subplots:
+    1) P vs vol plot
+    2) P vs temp plot
+
+In [2]: v = linspace(21, 100, 500)
+
+In [3]: T = linspace(200, 200, 500)
+
+In [13]: subplot(2, 1, 1)
+Out[13]: <AxesSubplot:>
+
+In [14]: plot(v, 2 / v)
+Out[14]: [<matplotlib.lines.Line2D at 0x211ec6eb100>]
+
+In [15]: subplot(2, 1, 2)
+Out[15]: <AxesSubplot:>
+
+In [16]: plot(T, 2 / v)
+Out[16]: [<matplotlib.lines.Line2D at 0x211ef343ee0>]

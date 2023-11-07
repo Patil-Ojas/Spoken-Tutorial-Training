@@ -1,0 +1,55 @@
+
+In [19]: x = linspace(-2 * pi, 2 * pi, 100)
+
+In [20]: plot(x, x*sin(x))
+Out[20]: [<matplotlib.lines.Line2D at 0x211ef203670>]
+
+In [21]: xlabel("$x axis$")
+Out[21]: Text(0.5, 28.902777777777764, '$x axis$')
+
+In [22]: ylabel("$y axis$")
+Out[22]: Text(55.402777777777786, 0.5, '$y axis$')
+
+In [23]: title("$x*sinx$")
+Out[23]: Text(0.5, 1.0, '$x*sinx$')
+
+In [24]: %history
+%pylab
+x = linspace(-2 * pi, 2 * pi, 100)
+plot(x, x*sin(x))
+xlabel("$x axis$")
+ylabel("$y axis$")
+title("$x*sinx$")
+%history
+
+In [25]: %history 6
+subplot(2, 1, 2)
+
+In [26]: %history 7-10
+plot(2 / v, T)
+subplot(2, 1, 2)
+plot(T, v / 2)
+subplot(2, 1, 1)
+
+In [27]: %save plot_script_s7.py 2 4-7
+The following commands were written to file `plot_script_s7.py`:
+v = linspace(21, 100, 500)
+subplot(2, 1, 1)
+plot(2 / v, v)
+subplot(2, 1, 2)
+plot(2 / v, T)
+
+In [28]: %run -i plot_script_s7.py
+
+In [29]: show()
+show() wont work here as my history and maam's history r diff
+show() essentially runs the code saved and displays the graph
+
+
+idk whats wrong
+x = linspace(-2 * pi, 2 * pi, 100)
+plot(x, x * sin(x))
+show()
+%save show_included.py 1-3
+%run -i show_inlcuded.py
+%run show_included.py (this gives rise to linspace error)

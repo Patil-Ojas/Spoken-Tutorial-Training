@@ -1,0 +1,73 @@
+
+
+In [67]: year, profit = loadtxt("C:\\Users\\ojasa\\co
+    ...: mpany-a-data.txt", unpack=True)
+
+In [68]: clf()
+
+In [69]: pie(profit, labels=year)
+Out[69]:
+([<matplotlib.patches.Wedge at 0x2180aadf3d0>,
+  <matplotlib.patches.Wedge at 0x2180aadf8b0>,
+  <matplotlib.patches.Wedge at 0x2180aadfd90>,
+  <matplotlib.patches.Wedge at 0x2180aae82b0>,
+  <matplotlib.patches.Wedge at 0x2180aae8790>,
+  <matplotlib.patches.Wedge at 0x2180aae8c70>,
+  <matplotlib.patches.Wedge at 0x2180aaf2190>,
+  <matplotlib.patches.Wedge at 0x2180aaf2670>,
+  <matplotlib.patches.Wedge at 0x2180aaf2b50>,
+  <matplotlib.patches.Wedge at 0x2180aafc070>,
+  <matplotlib.patches.Wedge at 0x2180aadf3a0>],
+ [Text(1.082710267240562, 0.19426393698232036, '2000.0'),
+  Text(0.7823073407063368, 0.7733015095530201, '2001.0'),
+  Text(0.1312935560403258, 1.0921364393436774, '2002.0'),
+  Text(-0.6472504641020703, 0.889419381798966, '2003.0'),
+  Text(-1.0686582162250247, -0.26070983275424914, '2004.0'),
+  Text(-0.6334432490362563, -0.8993050929747878, '2005.0'),
+  Text(-0.495224127532519, -0.9822184398134945, '2006.0'),
+  Text(0.1733357178535357, -1.0862572112148208, '2007.0'),
+  Text(0.8285381872666441, -0.7235499099861071, '2008.0'),
+  Text(1.0284020073873785, -0.3903707355855592, '2009.0'),
+  Text(1.0952845205026953, -0.10174388997468571, '2010.0')])
+
+clf() btw
+also color codes are for 
+white, red, black, magenta, yelloe, blue, green, cyan, yellow, magenta and blue
+
+In [75]: pie(profit, labels=year, colors=("w", "r", "k", "m", "y", "b", "g", "c", "y", "m", "b"))
+Out[75]:
+([<matplotlib.patches.Wedge at 0x2180e843910>,
+  <matplotlib.patches.Wedge at 0x2180e8431f0>,
+  <matplotlib.patches.Wedge at 0x2180e843af0>,
+  <matplotlib.patches.Wedge at 0x2180e895400>,
+  <matplotlib.patches.Wedge at 0x2180e895cd0>,
+  <matplotlib.patches.Wedge at 0x2180e8aa1f0>,
+  <matplotlib.patches.Wedge at 0x2180e8aa6d0>,
+  <matplotlib.patches.Wedge at 0x2180e8aabb0>,
+  <matplotlib.patches.Wedge at 0x2180e8a00d0>,
+  <matplotlib.patches.Wedge at 0x2180e8a05b0>,
+  <matplotlib.patches.Wedge at 0x2180aacd310>],
+ [Text(1.082710267240562, 0.19426393698232036, '2000.0'),
+  Text(0.7823073407063368, 0.7733015095530201, '2001.0'),
+  Text(0.1312935560403258, 1.0921364393436774, '2002.0'),
+  Text(-0.6472504641020703, 0.889419381798966, '2003.0'),
+  Text(-1.0686582162250247, -0.26070983275424914, '2004.0'),
+  Text(-0.6334432490362563, -0.8993050929747878, '2005.0'),
+  Text(-0.495224127532519, -0.9822184398134945, '2006.0'),
+  Text(0.1733357178535357, -1.0862572112148208, '2007.0'),
+  Text(0.8285381872666441, -0.7235499099861071, '2008.0'),
+  Text(1.0284020073873785, -0.3903707355855592, '2009.0'),
+  Text(1.0952845205026953, -0.10174388997468571, '2010.0')])
+
+
+In [78]: clf()
+
+In [79]: bar(year, profit)
+Out[79]: <BarContainer object of 11 artists>
+
+In [82]: clf()
+
+In [83]: bar(year, profit, fi
+    ...: ll=False, hatch='/')
+    ...:
+Out[83]: <BarContainer object of 11 artists>

@@ -1,0 +1,66 @@
+
+In [1]: mylist = ["spam", "eggs", "100", "1.234"]
+
+In [2]: type(mylist)
+Out[2]: list
+
+In [3]: mylist[0]
+Out[3]: 'spam'
+
+In [4]: mylist[-2]
+Out[4]: '100'
+
+In [5]: dou_list = ["a", ["b", "c", "d"], "5", "and",
+   ...:  "6"]
+
+In [6]: dou_list[1]
+Out[6]: ['b', 'c', 'd']
+
+In [7]: dou_list[1][2]
+Out[7]: 'd'
+
+In [8]: len(mylist)
+Out[8]: 4
+
+In [9]: mylist.append("shark")
+
+In [10]: mylist.append("6")
+
+In [11]: mylist
+Out[11]: ['spam', 'eggs', '100', '1.234', 'shark', '6']In [8]: len(mylist)
+Out[8]: 4
+
+In [9]: mylist.append("shark")
+
+In [10]: mylist.append("6")
+
+In [11]: mylist
+Out[11]: ['spam', 'eggs', '100', '1.234', 'shark', '6']
+
+In [11]: mylist
+Out[11]: ['spam', 'eggs', '100', '1.234', 'shark', '6']
+
+In [12]: del mylist[-1]
+
+In [13]: mylist.remove("eggs")
+
+In [14]: mylist
+Out[14]: ['spam', '100', '1.234', 'shark']
+
+
+In [15]: mylist.append("spam")
+
+In [16]: mylist
+Out[16]: ['spam', '100', '1.234', 'shark', 'spam']
+
+In [17]: mylist.remove("spam")
+
+In [18]: mylist
+Out[18]: ['100', '1.234', 'shark', 'spam']
+
+In [19]: k = [1, 2, 1, 3]
+
+In [20]: k.remove(k[2])
+
+In [21]: k
+Out[21]: [2, 1, 3]

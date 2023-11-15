@@ -1,0 +1,36 @@
+
+In [2]: x = "Hello"
+
+In [3]: y = "World"
+
+In [4]: z = x + ", " + y
+
+In [5]: print(z)
+Hello, World
+
+In [6]: x * 5
+Out[6]: 'HelloHelloHelloHelloHello'
+
+In [9]: e = "%%" + hy * 20 + "%%"
+
+In [10]: print(e)
+%%--------------------%%
+
+In [11]: a = "Hello nerd"
+
+In [12]: a[0]
+Out[12]: 'H'
+
+In [13]: a[-2]
+Out[13]: 'r'
+
+In [16]: s = "-"
+In [20]: seq = ("a", "b", "c")
+
+In [21]: print(s.join(seq))
+a-b-c
+
+In [23]: str = "L1-abc \nL2-abcd \n L3-abcde"
+
+In [24]: print(str.split())
+['L1-abc', 'L2-abcd', 'L3-abcde']

@@ -1,0 +1,52 @@
+
+In [2]: str1 = "Welcome to   py tutorials"
+
+In [3]: str1.split()
+Out[3]: ['Welcome', 'to', 'py', 'tutorials']
+
+In [4]: x = "8-26-2009;8-27-2009;8-29-2009"
+
+In [5]: x.split(";")
+Out[5]: ['8-26-2009', '8-27-2009', '8-29-2009']
+
+In [6]: str1.split(" ")
+Out[6]: ['Welcome', 'to', '', '', 'py', 'tutorials']
+
+In [8]: unstrip = " sup world  "
+
+In [9]: unstrip.strip()
+Out[9]: 'sup world'
+
+In [10]: mark_str = "1.25"
+
+In [11]: mark = float(mark_str)
+
+In [12]: type(mark_str)
+Out[12]: str
+
+In [13]: type(mark)
+Out[13]: float
+
+In [15]: str_no = "1.25"
+
+In [16]: no = int(float(str_no))
+
+In [17]: no
+Out[17]: 1
+
+#in notepad
+math_marks_A = []
+for line in open("C:\\Users\\ojasa\\student_record.txt"):
+    fields = line.split(";")
+    region_code = fields[0]
+    region_code_stripped = region_code.strip()
+    math_mark_str = fields[5]
+    math_mark = float(math_mark_str)
+    if region_code == 'A':
+        math_marks_A.append(math_mark)
+
+math_marks_mean = sum(math_marks_A)/len(math_marks_A)
+print(math_marks_mean)
+
+In [2]: %run C:\\Users\\ojasa\\marks_s16.txt
+63.12873272712288

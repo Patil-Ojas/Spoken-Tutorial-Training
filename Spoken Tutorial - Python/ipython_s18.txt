@@ -1,0 +1,95 @@
+
+In [1]: import numpy as np
+
+In [2]: a1 = np.array([1, 2, 3, 4])
+
+In [3]: a1
+Out[3]: array([1, 2, 3, 4])
+
+In [5]: a2 = np.array([[1, 2, 3, 4], [5, 6, 7, 8]])
+
+In [6]: a2
+Out[6]:
+array([[1, 2, 3, 4],
+       [5, 6, 7, 8]])
+
+In [9]: ar = np.arange(1, 9)
+
+In [10]: print(ar)
+[1 2 3 4 5 6 7 8]
+
+In [9]: ar = np.arange(1, 9)
+
+In [10]: print(ar)
+[1 2 3 4 5 6 7 8]
+
+In [11]: ar.reshape(2, 4)
+Out[11]:
+array([[1, 2, 3, 4],
+       [5, 6, 7, 8]])
+
+In [12]: ar
+Out[12]: array([1, 2, 3, 4, 5, 6, 7, 8])
+
+In [13]: ar.shape = (2, 4)
+
+In [14]: ar
+Out[14]:
+array([[1, 2, 3, 4],
+       [5, 6, 7, 8]])
+
+In [15]: a2.shape
+Out[15]: (2, 4)
+
+In [16]: a1.shape
+Out[16]: (4,)
+
+In [17]: ar.shape
+Out[17]: (2, 4)
+
+In [18]: a3 = np.array([1, 2, 3, "a string"])
+
+In [19]: a3
+Out[19]: array(['1', '2', '3', 'a string'], dtype='<U11')
+
+In [20]: np.identity(2)
+Out[20]:
+array([[1., 0.],
+       [0., 1.]])
+
+In [22]: np.zeros((4, 5))
+Out[22]:
+array([[0., 0., 0., 0., 0.],
+       [0., 0., 0., 0., 0.],
+       [0., 0., 0., 0., 0.],
+       [0., 0., 0., 0., 0.]])
+
+In [23]: a1
+Out[23]: array([1, 2, 3, 4])
+
+In [24]: a1 * 2
+Out[24]: array([2, 4, 6, 8])
+
+In [25]: a1
+Out[25]: array([1, 2, 3, 4])
+
+In [26]: a1 + 2
+Out[26]: array([3, 4, 5, 6])
+
+In [27]: a1
+Out[27]: array([1, 2, 3, 4])
+
+In [28]: a1 += 2
+
+In [29]: a1
+Out[29]: array([3, 4, 5, 6])
+
+In [30]: a1 = np.array([1, 2, 3, 4])
+
+In [31]: a2 = np.array([5, 6, 7, 8])
+
+In [32]: a1 + a2
+Out[32]: array([ 6,  8, 10, 12])
+
+In [33]: a1 * a2
+Out[33]: array([ 5, 12, 21, 32])

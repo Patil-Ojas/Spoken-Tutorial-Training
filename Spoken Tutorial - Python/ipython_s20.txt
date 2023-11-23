@@ -1,0 +1,75 @@
+
+In [73]: import matplotlib.pyplot as plt
+
+In [75]: img = plt.imread("C:\\Users\\ojasa\\test\\Sq
+    ...: uares.png")
+
+In [76]: plt.imshow(img)
+Out[76]: <matplotlib.image.AxesImage at 0x17dceb66b50>
+
+In [77]: plt.show()
+
+In [78]: plt.imshow(img, cmap="gray")
+Out[78]: <matplotlib.image.AxesImage at 0x17dcec8aa90>
+
+In [79]: plt.show()
+
+In [80]: img
+Out[80]:
+array([[0., 0., 0., ..., 1., 1., 1.],
+       [0., 0., 0., ..., 1., 1., 1.],
+       [0., 0., 0., ..., 1., 1., 1.],
+       ...,
+       [1., 1., 1., ..., 0., 0., 0.],
+       [1., 1., 1., ..., 0., 0., 0.],
+       [1., 1., 1., ..., 0., 0., 0.]], dtype=float32)
+
+In [81]: img.shape
+Out[81]: (300, 300)
+
+In [82]: img[:150, :150]
+Out[82]:
+array([[0., 0., 0., ..., 0., 0., 0.],
+       [0., 0., 0., ..., 0., 0., 0.],
+       [0., 0., 0., ..., 0., 0., 0.],
+       ...,
+       [0., 0., 0., ..., 1., 1., 1.],
+       [0., 0., 0., ..., 1., 1., 1.],
+       [0., 0., 0., ..., 1., 1., 1.]], dtype=float32)
+
+In [85]: plt.imshow(img[:150, :150])
+Out[85]: <matplotlib.image.AxesImage at 0x17dcedaadc0>
+
+In [86]: plt.show()
+
+In [92]: plt.show()
+In [93]: img[::2, ::2]
+Out[93]:
+array([[0., 0., 0., ..., 1., 1., 1.],
+       [0., 0., 0., ..., 1., 1., 1.],
+       [0., 0., 0., ..., 1., 1., 1.],
+       ...,
+       [1., 1., 1., ..., 0., 0., 0.],
+       [1., 1., 1., ..., 0., 0., 0.],
+       [1., 1., 1., ..., 0., 0., 0.]], dtype=float32)
+
+In [94]: plt.imshow(img[::2, ::2])
+Out[94]: <matplotlib.image.AxesImage at 0x17dcf149e50>
+
+In [95]: plt.show()
+
+In [96]: img = plt.imread("C:\\Users\\ojasa\\test\\py
+    ...: thon.png")
+
+In [97]: plt.imshow(img)
+Out[97]: <matplotlib.image.AxesImage at 0x17dcf6aa370>
+
+In [98]: plt.show()
+
+In [99]: img.shape
+Out[99]: (600, 600, 4)
+
+In [100]: plt.imshow(img[:, :, 0])
+Out[100]: <matplotlib.image.AxesImage at 0x17dcf584f40>
+
+In [101]: plt.show()

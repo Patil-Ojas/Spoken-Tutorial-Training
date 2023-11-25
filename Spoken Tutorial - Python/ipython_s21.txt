@@ -1,0 +1,120 @@
+
+In [1]: from numpy import matrix
+
+In [2]: m1 = matrix([1, 2, 3, 4])
+
+In [3]: m1
+Out[3]: matrix([[1, 2, 3, 4]])
+
+In [4]: m1.shape
+Out[4]: (1, 4)
+
+In [5]: l1 = [[1, 2, 3, 4], [5, 6, 7, 8]]
+
+In [6]: m2 = matrix(l1)
+
+In [7]: print(m2)
+[[1 2 3 4]
+ [5 6 7 8]]
+
+In [8]: from numpy import asmatrix, arange
+
+In [9]: m2_array = asmatrix(arange(1, 9).reshape(2, 4))
+
+In [10]: m2_array
+Out[10]:
+matrix([[1, 2, 3, 4],
+        [5, 6, 7, 8]])
+
+In [15]: m3= asmatrix(arange(5, 13).reshape(2, 4))
+
+In [16]: m2 = asmatrix(arange(1, 9).reshape(2, 4))
+
+In [17]: m3 + m2
+Out[17]:
+matrix([[ 6,  8, 10, 12],
+        [14, 16, 18, 20]])
+
+In [18]: m3 - m2
+Out[18]:
+matrix([[4, 4, 4, 4],
+        [4, 4, 4, 4]])
+
+In [19]: m2 * 6.5
+Out[19]:
+matrix([[ 6.5, 13. , 19.5, 26. ],
+        [32.5, 39. , 45.5, 52. ]])
+
+In [20]: m2.shape
+Out[20]: (2, 4)
+
+In [21]: m4 = asmatrix(arange(1, 9).reshape(4, 2))
+
+In [22]: m2 * m4
+Out[22]:
+matrix([[ 50,  60],
+        [114, 140]])
+
+In [23]: print(m4)
+[[1 2]
+ [3 4]
+ [5 6]
+ [7 8]]
+
+In [24]: print(m4.T)
+[[1 3 5 7]
+ [2 4 6 8]]
+
+In [25]: m5 = [[1, 2], [3, 4]]
+
+In [26]: from numpy.linalg import det
+
+In [27]: det(m5)
+Out[27]: -2.0000000000000004
+
+In [29]: from numpy.linalg import inv
+
+In [30]: inv_5 = inv(m5)
+
+In [31]: inv_5
+Out[31]:
+array([[-2. ,  1. ],
+       [ 1.5, -0.5]])
+
+In [48]: allclose(inv_5 * m5, asmatrix(eye(2)))
+Out[48]: False
+:(
+
+In [1]: from numpy import diag
+
+In [2]: from numpy.linalg import eig
+
+In [5]: m6 = asmatrix(diag((1, 2, 3)))
+
+In [6]: eig(m6)
+Out[6]:
+(array([1., 2., 3.]),
+ matrix([[1., 0., 0.],
+         [0., 1., 0.],
+         [0., 0., 1.]]))
+
+In [7]: eig_value = eig(m6)[0]
+
+In [8]: eig_value
+Out[8]: array([1., 2., 3.])
+
+In [9]: eig_vector = eig(m6)[1]
+
+In [10]: eig_vector
+Out[10]:
+matrix([[1., 0., 0.],
+        [0., 1., 0.],
+        [0., 0., 1.]])
+
+In [11]: from numpy.linalg import eigvals
+
+In [12]: eig_val1 = eigvals(m6)
+
+In [13]: eig_val1
+Out[13]: array([1., 2., 3.])
+

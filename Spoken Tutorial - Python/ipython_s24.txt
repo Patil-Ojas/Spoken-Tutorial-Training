@@ -1,0 +1,50 @@
+
+In [1]: c = 3.2 + 4.6j
+
+In [2]: c.
+  Input In [2]
+    c.
+      ^ (gives all possible options?)
+SyntaxError: invalid syntax
+
+
+In [3]: c.real
+Out[3]: 3.2
+
+In [4]: abs(c)
+Out[4]: 5.60357029044876
+
+In [5]: t = True
+
+In [6]: f = not t
+
+In [7]: f
+Out[7]: False
+
+In [8]: f or t
+Out[8]: True
+
+In [9]: f and t
+Out[9]: False
+
+In [12]: a = False
+
+In [13]: b = True
+
+In [14]: c = True
+
+In [15]: (a and b) or c
+Out[15]: True
+
+In [16]: a and (b or c)
+Out[16]: False
+
+In [17]: 16 % 5
+Out[17]: 1
+
+In [18]: 2 ** 3
+Out[18]: 8
+
+In [19]: 3 ** 0.5
+Out[19]: 1.7320508075688772
+

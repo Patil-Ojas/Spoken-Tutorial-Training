@@ -1,0 +1,53 @@
+
+tuple:- ()
+list:- []
+string:- "" / '' / ''' '''
+
+max()
+min()
+len()
+sum()
+
+this in thisstring
+
+string and tuple cannot be altered but list can be
+
+Converting list to tuple and vv
+In [22]: l_tuple = [(17, "ram", 56), (16, "sita",
+    ...:  48)]
+
+In [23]: t = tuple(l_tuple)
+
+In [24]: t
+Out[24]: ((17, 'ram', 56), (16, 'sita', 48))
+
+In [25]: tuple_list = ([2, "two"], [3, "three"])
+
+In [26]: l = list(tuple_list)
+
+In [27]: l
+Out[27]: [[2, 'two'], [3, 'three']]
+
+string to list n vv ig
+In [28]: otherstring = "tim, ayo, why"
+
+In [29]: otherstring.split(",")
+Out[29]: ['tim', ' ayo', ' why']
+
+In [30]: otherlist = ["list", "joined", "by", "co
+    ...: mmas"]
+
+In [31]: ",".join(otherlist)
+Out[31]: 'list,joined,by,commas'
+
+make 'hello sup man ayo' to 'hello sup'
+
+In [41]: M = "Hello sup man ayo"
+
+In [42]: m1 = M.split()
+
+In [43]: M = " ".join(m1[:3])
+
+In [44]: M
+Out[44]: 'Hello sup man'
+

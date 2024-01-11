@@ -1,0 +1,32 @@
+
+In [1]: x = 1.568
+
+In [3]: print("Value of x is  %3.3f" % x)
+Value of x is  1.568
+
+In [4]: y = 2
+
+In [5]: z = "red"
+
+In [6]: print("x is %2.1f, y is %d and z is %s" %
+   ...:  (x, y, z))
+x is 1.6, y is 2 and z is red
+
+In [18]: %run C:\\Users\\ojasa\\test\\ipython2\\t
+    ...: extcode_s26.txt
+Heloo
+World
+Hello World
+
+In [20]: ip = input()
+bruh
+
+In [21]: ip
+Out[21]: 'bruh'
+
+In [38]: ip = input("sup\n")
+sup
+bru
+
+In [39]: ip
+Out[39]: 'bru'

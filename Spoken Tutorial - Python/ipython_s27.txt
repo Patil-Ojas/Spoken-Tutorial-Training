@@ -1,0 +1,45 @@
+
+LOOPS
+
+In [1]: num = int(input())
+4
+
+In [2]: if num % 2 == 0:
+   ...:     print("even")
+   ...: else:
+   ...:     print("odd")
+   ...:
+even
+
+In [3]: a = -3
+
+In [4]: if a > 0:
+   ...:     print("positive")
+   ...: elif a < 0:
+   ...:     print("negtive")
+   ...: else:
+   ...:     print("zero")
+   ...:
+negtive
+
+In [5]: a = int(input())
+69
+In [6]: a = 4
+
+In [7]: b = 2
+
+In [8]: large_no = a if a > b else b
+
+In [9]: large_no
+Out[9]: 4
+In [10]: a = 11
+
+In [13]: a
+Out[13]: 11
+
+In [14]: if a % 2 == 0:
+    ...:     print("evemn")
+    ...: else:
+    ...:     pass
+    ...:
+

@@ -1,0 +1,38 @@
+
+In [15]: i = 1
+
+In [16]: while i < 10:
+    ...:     print(i ** 2)
+    ...:     i += 2
+1
+9
+25
+49
+81
+
+In [17]: for n in range(1, 10, 2):
+    ...:     print(n ** 2)
+1
+9
+25
+49
+81
+
+In [1]: for n in range(2, 10, 2):
+   ...:     pass
+
+In [2]: for letter in "python":
+   ...:     if letter == "h":
+   ...:         break
+   ...:     print("current letter", letter)
+current letter p
+current letter y
+current letter t
+
+In [5]: for n in range(1, 10, 2):
+   ...:     if n % 3 == 0:
+   ...:         continue
+   ...:     print(n ** 2)
+1
+25
+49
